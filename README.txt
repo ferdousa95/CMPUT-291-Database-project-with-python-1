@@ -1,6 +1,6 @@
 Group member:
 
-1.Maximus
+1.
 
 2.Ferdous Ahmed Adit
 1538839
