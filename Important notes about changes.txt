@@ -1,0 +1,35 @@
+Okay, so I fixed some of the functions that I made and used 'try except' on some of the inputs that I deliberately failed but it crashed
+the program. I am not too proud of MarkedPost function, but I think this is a good presenting way.
+The readme file is pretty small, but you need to input your full name and CCID in it. 
+
+-------------------------------
+Okay, serious stuff, I changed the database file significantly because, in the testing process, it tells us that we are going to get a separate .db file and .sql file. 
+Which you have to use to run the program without changing anything inside. If you do, then 1-10 character change reduces ten marks. 11-20 character change takes 20 marks from you. 
+But what we were doing was hardcoding the file name with absolute
+path and also hard coding the whole SQL file. 
+
+So I used system calls to make changes in the Database file, took out all the SQL commands, and put it in a separate file. 
+NOTE - I changed the database filename. When you test run it, make sure you change the .db file and .sql file name to something else. 
+
+=> py main.py database.db 
+
+Gets you to run the database as it is. 
+
+- if you want to include the data.sql file, there are two ways -
+1. use Sqlite terminal 
+=> sqlite3 database.db <data.sql
+   py main.py database.db
+
+2. directly
+=> py main.py database.db data.sql
+
+I have put a function in database file that automatically detects the 3rd variable but just to be safe, so that if it doesn't work, there
+is alternative. 
+------------------------------
+I checked all the rubric marks and tested all the conditions, but I have pretty low self-confidence,so... it's on God now. 
+
+-------------------------------
+One issue is with the login screen that I don't know it is okay or not. 
+When it asks for an existing user or not, and I say No, it takes me to sign up page. When I No to that, it gives me a print like why are you here and then starts all over. 
+Shouldn't it end at that point?
+
